@@ -38,8 +38,16 @@ class Pantalla2 extends StatelessWidget {
             const SizedBox(height: 16),
             Center(
               child: Text(
-                'Fitness Enthusiast',
-                style: theme.textTheme.headlineMedium,
+                'Alexander Cancino Fernandez',
+                style: theme.textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Center(
+              child: Text(
+                '6-i',
+                style: theme.textTheme.titleMedium?.copyWith(color: theme.textTheme.titleMedium?.color?.withOpacity(0.7)),
               ),
             ),
             const SizedBox(height: 20),

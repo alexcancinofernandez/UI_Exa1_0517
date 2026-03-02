@@ -46,6 +46,19 @@ The application uses a modern and energetic design system built around a specifi
     - Styled components like `AppBar`, `ElevatedButton`, and `Card`.
 - **Dynamic Content**: Images are loaded from network URLs, and lists are populated dynamically.
 - **Profile Picture on Home Screen**: The user's profile picture is displayed on the home screen.
+- **Personalized User Information**: The user's full name and group are displayed on the profile screen.
+
+### Current Plan: Add User Name and Group
+
+**Status: [COMPLETED]**
+
+**Goal**: Display the user's full name and group on the profile screen.
+
+**Steps**:
+
+1.  **[COMPLETED]** Modified `lib/mispantallas/pantalla2.dart`.
+2.  **[COMPLETED]** Replaced the placeholder title with a `Text` widget for the user's full name, "Alexander Cancino Fernandez".
+3.  **[COMPLETED]** Added another `Text` widget below the name to display the group, "6-i".
 
 ### Previous Plan: Add Profile Picture
 
