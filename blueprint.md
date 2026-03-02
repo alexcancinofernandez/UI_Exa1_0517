@@ -45,6 +45,32 @@ The application uses a modern and energetic design system built around a specifi
     - Custom `google_fonts` typography.
     - Styled components like `AppBar`, `ElevatedButton`, and `Card`.
 - **Dynamic Content**: Images are loaded from network URLs, and lists are populated dynamically.
+- **Profile Picture on Home Screen**: The user's profile picture is displayed on the home screen.
+
+### Previous Plan: Add Profile Picture
+
+**Status: [COMPLETED]**
+
+**Goal**: Add a user profile picture to the home screen for a more personalized feel.
+
+**Steps**:
+
+1.  **[COMPLETED]** Refactored the header of the `Inicio.dart` screen to a `Row` layout.
+2.  **[COMPLETED]** Added a `CircleAvatar` widget to display the profile picture.
+3.  **[COMPLETED]** Used a `NetworkImage` to load the user-provided image URL.
+
+### Previous Plan: Compilation Error Fix
+
+**Status: [COMPLETED]**
+
+**Goal**: Resolve the compilation errors that were preventing the app from running.
+
+**Steps**:
+
+1.  **[COMPLETED]** Corrected import paths for `inicio.dart` in `main.dart` and `splash.dart`.
+2.  **[COMPLETED]** Removed the redundant `'/'` route from the `routes` map in `main.dart` to resolve the conflict with the `home` property.
+3.  **[COMPLETED]** Removed the `const` keyword from `Inicio()` constructors in `main.dart` and `splash.dart` to prevent strict constant evaluation errors.
+4.  **[COMPLETED]** Executed `flutter clean` and `flutter pub get` to clear any stale build cache and ensure all dependencies were correctly resolved.
 
 ### Previous Plan: Splash Screen Implementation
 
@@ -71,16 +97,3 @@ The application uses a modern and energetic design system built around a specifi
 2.  **[COMPLETED]** Created `blueprint.md` to document the application.
 3.  **[COMPLETED]** Implemented a centralized `ThemeData` in `main.dart` using `google_fonts`.
 4.  **[COMPLETED]** Refactored all screens (`Inicio.dart`, `pantalla2.dart`, `pantalla3.dart`) to use the new theme, removing hardcoded styles.
-
-### Current Plan: Compilation Error Fix
-
-**Status: [COMPLETED]**
-
-**Goal**: Resolve the compilation errors that were preventing the app from running.
-
-**Steps**:
-
-1.  **[COMPLETED]** Corrected import paths for `inicio.dart` in `main.dart` and `splash.dart`.
-2.  **[COMPLETED]** Removed the redundant `'/'` route from the `routes` map in `main.dart` to resolve the conflict with the `home` property.
-3.  **[COMPLETED]** Removed the `const` keyword from `Inicio()` constructors in `main.dart` and `splash.dart` to prevent strict constant evaluation errors.
-4.  **[COMPLETED]** Executed `flutter clean` and `flutter pub get` to clear any stale build cache and ensure all dependencies were correctly resolved.

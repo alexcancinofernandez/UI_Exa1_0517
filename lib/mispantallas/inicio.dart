@@ -24,15 +24,7 @@ class Inicio extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Welcome Back, Alex!',
-              style: theme.textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              'Ready to crush your goals today?',
-              style: theme.textTheme.titleMedium?.copyWith(color: theme.textTheme.titleMedium?.color?.withOpacity(0.7)),
-            ),
+            _buildHeader(theme),
             const SizedBox(height: 24),
             _buildSuggestionCard(theme),
             const SizedBox(height: 24),
@@ -64,6 +56,32 @@ class Inicio extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+
+  Widget _buildHeader(ThemeData theme) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Welcome Back, Alex!',
+              style: theme.textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Ready to crush your goals today?',
+              style: theme.textTheme.titleMedium?.copyWith(color: theme.textTheme.titleMedium?.color?.withOpacity(0.7)),
+            ),
+          ],
+        ),
+        const CircleAvatar(
+          radius: 30,
+          backgroundImage: NetworkImage('https://raw.githubusercontent.com/alexcancinofernandez/mis_imagenes_de_flutter_0517/refs/heads/main/Training%20Partne.jpg'),
+        ),
+      ],
     );
   }
 
@@ -155,4 +173,3 @@ class Inicio extends StatelessWidget {
     );
   }
 }
-
